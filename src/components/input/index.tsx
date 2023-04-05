@@ -7,10 +7,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   onChange: (value: any) => void
 }
 
-const InputText: React.FC<InputProps> = ({
+const Input: React.FC<InputProps> = ({
   labelProp,
   valueProp,
   typeProp,
+  placeholder,
   onChange
 }) => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) =>
@@ -19,9 +20,14 @@ const InputText: React.FC<InputProps> = ({
   return (
     <div>
       <label>{labelProp}</label>
-      <input type={typeProp} value={valueProp} onChange={handleInputChange} />
+      <input
+        type={typeProp}
+        value={valueProp}
+        placeholder={placeholder}
+        onChange={handleInputChange}
+      />
     </div>
   )
 }
 
-export default InputText
+export default Input

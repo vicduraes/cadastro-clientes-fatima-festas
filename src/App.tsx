@@ -1,22 +1,11 @@
 import React from 'react'
-import Button from './components/button'
-import InputText from './components/input-text'
+
+import Login from './pages/login'
 
 function App() {
   return (
     <div className="App">
-      <p>TESTE</p>
-      <div>
-        <Button></Button>
-        <InputText
-          labelProp="teste"
-          valueProp=""
-          typeProp="text"
-          onChange={() => {
-            console.log('Olá')
-          }}
-        ></InputText>
-      </div>
+      <Login />
     </div>
   )
 }
