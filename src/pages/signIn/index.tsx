@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '../../components/button'
 import Input from '../../components/input'
 
-const Login: React.FC = () => {
+const SignIn: React.FC = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -40,4 +40,4 @@ const Login: React.FC = () => {
   )
 }
 
-export default Login
+export default SignIn
