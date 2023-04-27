@@ -1,3 +1,17 @@
-h2 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600;700&family=Ubuntu+Mono&display=swap');
+@import './variables';
+
+html {
+  font-family: $font-family;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  button,
+  input {
+    font-family: $font-family;
+  }
 }
